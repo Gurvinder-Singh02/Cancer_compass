@@ -1,0 +1,236 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button defaultHref="/tabs/home"></ion-back-button>
+    <div class="flex">
+      <h3>Details</h3>
+      <p class="ion-text-uppercase"> {{item?.name}}</p>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd($event)">
+
+  <ion-fab class="FAB_upper" slot="fixed" vertical="top" horizontal="end" [edge]="true">
+    <ion-fab-button size="small">
+      <ion-icon name="logo-apple-ar"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button size="small" (click)="ScrollToTop()">
+        <ion-icon name="caret-up-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button size="small" (click)="ScrollToBottom()">
+        <ion-icon name="caret-down-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab class="FAB_lower" slot="fixed" vertical="bottom" horizontal="start">
+    <ion-fab-button size="small">
+      <ion-icon name="barcode-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="scrollToLabel('risk')">
+        <ion-icon name="git-network-outline"></ion-icon>
+        Risk Factors
+      </ion-fab-button>
+      <ion-fab-button (click)="scrollToLabel('Types')">
+        <ion-icon name="git-network-outline"></ion-icon>
+        Types
+      </ion-fab-button>
+      <ion-fab-button (click)="scrollToLabel('Stages')">
+        <ion-icon name="albums-outline"></ion-icon>
+        Stages
+      </ion-fab-button>
+      <ion-fab-button (click)="scrollToLabel('Symptoms')">
+        <ion-icon name="pulse-outline"></ion-icon>
+        Symptoms
+      </ion-fab-button>
+      <ion-fab-button (click)="scrollToLabel('Treatments')">
+        <ion-icon name="medkit-outline"></ion-icon>
+        Treatments
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <ion-slides [options]="option1">
+    <ion-slide>
+      <ion-card class="card1" [style.background-image]="item.bgimg">
+        <h3>
+          {{item?.name}}
+        </h3>
+        <p>
+          {{item?.description}}
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card1" [style.background-image]="item.bgimg2">
+        <h3 style="font-size: 20px;">
+          From a Clinician's perspective:
+        </h3>
+        <p>
+          {{item?.description2}}
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card1" [style.background-image]="item.bgimg3">
+        <h3 style="font-size: 20px;">
+          From an individual's perspective:
+        </h3>
+        <p>
+          {{item?.description3}}
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+  <ion-card class=" card2  ">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <h1>{{item?.survivalrate}}%</h1>
+          <p>survival Rate</p>
+        </ion-col>
+        <ion-col size="4">
+          <h1>{{item?.stages}}</h1>
+          <p>Stages</p>
+        </ion-col>
+        <ion-col size="4">
+          <h1>{{item?.types}}</h1>
+          <p>Types</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+  <div class="card3 ">
+    <app-card3></app-card3>
+  </div>
+
+  <div class="card4 " id="risk">
+    <ion-button fill="clear" style="width: 100px;">
+      <ion-icon name="git-network-outline"></ion-icon>
+      Risk Factors
+    </ion-button>
+    <ion-card>
+      <ol style="list-style-type: none; padding:0 5px ; text-align:center">
+        <li>
+          {{item?.I_factors}}
+        </li>
+      </ol>
+    </ion-card>
+<!-- 
+    <ion-slides [options]="option1">
+      <ion-slide>
+        <ion-card class="card1" [style.background-image]="item.bgimg">
+          <h3>
+            {{item?.name}}
+          </h3>
+          <p>
+            {{item?.description}}
+          </p>
+        </ion-card>
+      </ion-slide>
+    </ion-slides> -->
+    <!-- <ion-card *ngFor="let x of item?.factors_details1" style="padding:0">
+      <ol style="list-style-type: none; padding:0 5px ; text-align:justify ">
+        <li>
+          {{x}}
+        </li>
+      </ol>
+    </ion-card> -->
+  </div>
+
+  <div class="card4 " id="Types">
+    <ion-button fill="clear">
+      <ion-icon name="git-network-outline"></ion-icon>
+      Types
+    </ion-button>
+    <ion-card>
+      <ol>
+        <li *ngFor="let x of item.types_details">
+          &nbsp; {{x}}
+        </li>
+      </ol>
+    </ion-card>
+  </div>
+
+
+  <div class="card5">
+    <img [src]="item?.type_img" alt="" srcset="">
+  </div>
+
+
+  <div class="card6" id="Stages">
+    <ion-button fill="clear">
+      <ion-icon name="albums-outline"></ion-icon>
+      Stages
+    </ion-button>
+    <ion-card>
+      <ol start=0>
+        <li *ngFor="let x of item.stages_details">
+          &nbsp; {{x}}
+        </li>
+      </ol>
+    </ion-card>
+  </div>
+
+
+  <div class="card4" id="Symptoms">
+    <ion-button fill="clear" style="width: 90px;">
+      <ion-icon name="pulse-outline"></ion-icon>
+      <!-- <ion-icon  name="albums-outline"></ion-icon> -->
+      Symptoms
+    </ion-button>
+    <ion-card>
+      <ol start=1>
+        <li *ngFor="let x of item.symptoms">
+          &nbsp; {{x}}
+        </li>
+      </ol>
+    </ion-card>
+  </div>
+
+
+  <div class="card5">
+    <img [src]="item?.symptoms_img" alt="" srcset="">
+  </div>
+
+  <div class="card4" id="Treatments">
+    <ion-button fill="clear" style="width: 100px;">
+      <ion-icon name="medkit-outline"></ion-icon>
+      Treatments
+    </ion-button>
+    <ion-card>
+      <ol style="list-style-type: none; padding:0">
+        <li class="ion-padding-horizontal ion-text-justify">
+          &nbsp; {{item?.treatments.define}}
+        </li>
+      </ol>
+    </ion-card>
+    <ion-button fill="clear" style="width: 80px;">
+      <ion-icon name="options-outline"></ion-icon>
+      Options
+    </ion-button>
+    <ion-card>
+      <ol>
+        <li *ngFor="let x of item?.treatments.options">
+          &nbsp; {{x}}
+        </li>
+      </ol>
+    </ion-card>
+  </div>
+
+
+  <div class="card5">
+    <img [src]="item?.treatments_img" alt="" srcset="">
+  </div>
+
+
+</ion-content>

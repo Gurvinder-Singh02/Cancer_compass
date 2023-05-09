@@ -1,0 +1,74 @@
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+ion-text{
+  font-size: 12px;
+}
+
+ion-content {
+  
+  .welcome_msg {
+    color: #57bf9c;
+    h1{
+      margin-top: 50px;
+      font-size: large;
+      font-weight: 600;
+    }
+  }
+
+  overflow: hidden;
+  --overflow: hidden;
+}
+
+.scroll-content {
+  overflow: hidden;
+}
+
+ion-list {
+  background: transparent;
+  ion-item {
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 15px;
+    ion-input{
+      padding:0 ;
+      font-size: 15px;
+    }
+  }
+
+  ion-row {
+    margin-bottom: 5vh;
+  }
+
+  ion-button {
+    width: 30vh;
+    margin: auto;
+  }
+
+  .alignItems {
+
+    ion-checkbox,
+    ion-note {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    ion-checkbox {
+      margin-right: 1vw;
+      --size: 1.1rem;
+    }
+  }
+
+  .signup {
+    margin-top: 5vh;
+    font-size: 0.8rem;
+  }
+
+  ion-col {
+    ion-note {
+      font-size: 0.85rem;
+    }
+  }
+}

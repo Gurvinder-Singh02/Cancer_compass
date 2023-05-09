@@ -1,0 +1,116 @@
+<ion-header class="ion-no-border">
+    <div class="top-section">
+      <div class="top-menu">
+        <div class="title">
+          <span class="Cancer">Cancer</span>
+          <span class="compass">
+            <ion-icon slot="start" name="compass-outline"></ion-icon>
+          </span>
+          <img src="assets/person half.png" alt="">
+        </div>
+        <div class="types">
+          <div class="first">100+</div>
+          <div class="second">Types of Cancer</div>
+        </div>
+        <div class="types">
+          <div class="first">19.3M</div>
+          <div class="second">Affected people</div>
+        </div>
+      </div>
+    </div>
+  
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-item lines="none" color="light">
+        <ion-label class="title">Common Types</ion-label>
+        <ion-button (click)="presentToast('top')">View all</ion-button>
+      </ion-item>
+      <ion-row>
+        <ion-slides [options]="slideOpts">
+          <ion-slide *ngFor="let item of popularItems">
+            <ion-card class="bgCard" [routerLink]="['/', 'tabs', 'items', item.id]">
+              <ion-card-header>
+                <ion-label>
+                  <h3>
+                    {{item?.name}}
+                  </h3>
+                  <p>
+                    {{item.description}}
+                  </p>
+                </ion-label>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="10">
+                      <img [src]="item?.img" />
+                    </ion-col>
+                    <ion-col size="2">
+  
+                      <div class="imgside">
+                        <div class="siderate">
+                          <h3>
+                            {{item.survivalrate}}%
+                          </h3>
+                          <p>
+                            Survival Rate
+                          </p>
+                        </div>
+                        <div class="siderate">
+                          <h3>
+                            {{item.stages}}
+                          </h3>
+                          <p>
+                            Stages
+                          </p>
+                        </div>
+                        <div class="siderate">
+                          <h3>
+                            {{item.types}}
+                          </h3>
+                          <p>
+                            Types
+                          </p>
+                        </div>
+                      </div>
+  
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-row>
+    </ion-grid>
+  
+    <ion-grid class="ion-margin-top">
+      <ion-item lines="none" color="light">
+        <ion-label class="title">Featured </ion-label>
+        <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button>
+      </ion-item>
+      <ion-row>
+        <ion-slides [options]="slideOpts1">
+          <ion-slide *ngFor="let item of featuredItems">
+            <ion-card class="featured" [routerLink]="['/', 'tabs', 'items', item.id]">
+              <ion-card-header>
+                <img [src]="item?.img" />
+              </ion-card-header>
+              <ion-card-content>
+                <ion-item lines="none">
+                  <ion-label>
+                    {{item?.name}}
+                    <p><ion-text color="tertiary">{{item?.category}}</ion-text></p>
+                  </ion-label>
+                  <!-- <ion-text class="price" slot="end" color="primary"><b>₹{{item?.price}}</b></ion-text> -->
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>

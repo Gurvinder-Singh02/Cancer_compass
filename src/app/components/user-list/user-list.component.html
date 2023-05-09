@@ -1,0 +1,43 @@
+<!-- <ion-card>
+
+  <ion-item lines="full" (click)="redirect()" detail="true">
+    <ion-avatar slot="start">
+      <img [src]="item.photo" />
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        {{item?.name}}
+      </h3>
+
+    </ion-label>
+  </ion-item>
+  <ion-text class="ion-padding ion-margin ">
+    {{item?.des}}
+  </ion-text>
+</ion-card> -->
+<ion-card (click)="redirect()">
+  <ion-item no-lines detail="true">
+    <ion-avatar slot="start">
+      <img [src]="item.photo" />
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        {{item?.name}}
+      </h3>
+
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <p class="ion-padding-bottom ion-no-margin ion-text-justify " style="font-size:11px">
+      {{item?.des}}
+    </p>
+  </ion-item>
+
+  <div class=" ion-text-right " style=" margin-right:20px ;color: gold; ">
+    <ion-icon *ngFor="let item of [1,2,3,4]" name="star"></ion-icon>
+    <ion-icon *ngFor="let item of [1]" name="star-outline"></ion-icon>
+  </div>
+</ion-card>
+
+
+<!-- card for ionic like full details of doctors  -->

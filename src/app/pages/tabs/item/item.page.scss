@@ -1,0 +1,302 @@
+ion-toolbar {
+    --background: var(--ion-color-secondary);
+    --color: var(--ion-color-primary-contrast);
+
+    ion-back-button {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 3vh;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -1.5vh;
+        margin-bottom: 1.5vh;
+
+        h3 {
+            padding: 0;
+            margin: 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            margin-top: -1vh;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+    }
+}
+
+ion-content {
+
+    .FAB_upper {
+        ion-fab-button {
+            --color:var(--ion-color-secondary) ;
+            --background: white;
+            --box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.25);
+        }
+        
+    }
+    .FAB_lower {
+        ion-fab-button {
+            --color:white ;
+            --background: var(--ion-color-secondary);
+            --box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.25);
+        }
+        
+        ion-fab-list {
+            ion-fab-button {
+                text-align: left;
+                --border-radius: 8px;
+                --box-shadow: 0;
+                font-weight: 600;
+                font-size: 0.6rem;
+                width: 101px;
+                height: 25px;
+                --box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.25);
+                ion-icon{
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+
+    --background: var(--ion-color-light);
+
+    .card1 {
+        height: 43vh;
+        border-radius: 26px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        // background-image:
+        //     linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(12, 12, 12, 1)),
+        //     url('/assets/Category-main/Breast-Cancer/raw main.png');
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+
+        ion-button {
+            --background: var(--ion-color-secondary);
+            --color: white;
+            --border-radius: 10px;
+            --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+            --padding-top: 10px;
+            --padding-bottom: 10px;
+        }
+
+        h3 {
+            color: white;
+            padding: 0;
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: lightgray;
+            padding: 0;
+            text-align: center;
+            margin-top: -1vh;
+            font-size: 0.5rem;
+            line-height: 10px;
+        }
+    }
+
+    .card2 {
+        border-radius: 89px;
+        outline: solid 2.5px rgba(87, 191, 156, 0.2509803922);
+        box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.2509803922);
+        --background: var(--ion-color-secondary);
+        line-height: 0px;
+        padding: 4px 0;
+        margin: 10px auto;
+        text-align: center;
+        width: 200px;
+        height: 47px;
+        display: flex;
+        justify-self: center;
+
+        h1 {
+            line-height: 85.5%;
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+            font-size: 19px;
+            color: white;
+        }
+
+        p {
+            line-height: 85.5%;
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+            font-size: 7px;
+            color: white;
+
+        }
+    }
+
+    .card3 {
+
+        transform: scale(0.35);
+        position: relative;
+        right: 68px;
+        bottom: 28px;
+        // app-card3{
+        //     border-radius: 20px;
+        //     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        // }
+    }
+
+    .card4 {
+        display: flex;
+        flex-direction: column;
+
+        ion-button {
+            ion-icon {
+                padding-right: 5px;
+            }
+
+            outline: solid 2.5px rgba(206, 205, 205, 0.251);
+            text-transform: capitalize;
+            letter-spacing: 0px;
+
+            /* overflow: hidden; */
+            /* padding: 15px;
+            /* margin: 43px; */
+            width: 70px;
+            height: 23px;
+            background-color: #ebe8e8;
+            border-radius: 9px;
+            /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); */
+            color: black;
+            font-weight: 600;
+            font-size: 0.6rem;
+            margin: 0 0 -20px 25px;
+        }
+
+        ion-card {
+            padding-top: 5px;
+            z-index: -1;
+            border-radius: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+
+            ol,
+            ul {
+                padding-left: 30px;
+
+                li {
+                    font-size: 11px;
+                }
+            }
+        }
+
+
+    }
+
+    .card5 {
+        display: hidden;
+        padding: 0;
+        margin: 10px 15px;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            position: relative;
+            top: 2.5px;
+            // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        }
+
+    }
+
+
+    .card6 {
+        display: flex;
+        flex-direction: column;
+
+        // position: relative;
+        // bottom: 70px;
+        // margin-bottom: -25%;
+
+        ion-button {
+            ion-icon {
+                padding-right: 5px;
+            }
+
+            outline: solid 2.5px rgba(206, 205, 205, 0.251);
+            text-transform: capitalize;
+            letter-spacing: 0px;
+
+            /* overflow: hidden; */
+            /* padding: 15px;
+            /* margin: 43px; */
+            width: 70px;
+            height: 23px;
+            background-color: #ebe8e8;
+            border-radius: 9px;
+            /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); */
+            color: black;
+            font-weight: 600;
+            font-size: 0.6rem;
+            margin: 0 0 -20px 25px;
+        }
+
+        ion-card {
+            padding-top: 5px;
+            z-index: -1;
+            border-radius: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+
+            ol {
+                // list-style-position: inside;
+                list-style-type: none;
+                padding-left: 60px;
+            }
+
+            li {
+                font-size: 11px;
+                // counter-increment:
+            }
+
+            li::marker {
+                content: "Stage " counter(list-item) " : ";
+            }
+        }
+
+
+    }
+
+    .to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ion-button {
+            ion-icon {
+                padding-right: 5px;
+            }
+
+            text-transform: capitalize;
+            letter-spacing: 0px;
+            width: 100px;
+            height: 23px;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 0.6rem;
+            background-color: #57bf9c;
+        }
+
+    }
+
+
+}

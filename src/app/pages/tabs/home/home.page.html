@@ -1,0 +1,86 @@
+<ion-header class="ion-no-border">
+  <div class="top-section">
+    <div class="top-menu">
+      <div class="title">
+        <span class="Cancer">Cancer</span>
+        <span class="compass">
+          <ion-icon slot="start" name="compass-outline"></ion-icon>
+        </span><br>
+        <span class="des"> this is description of the app which provides the deiatls fo all cancer types and connect to community</span>
+        <img src="assets/person half.png" alt="">
+      </div>
+      <div class="typesmain">
+
+        <div class="types">
+          <div class="first">100+</div>
+          <div class="second">Types of Cancer</div>
+        </div>
+        <div class="types">
+          <div class="first">19.3M</div>
+          <div class="second">Affected people</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="lowsection">
+
+ 
+  <div class="common">
+    <h3 routerLink="../../home" class="ion-text-uppercase"> <ion-icon name="chatbubbles-outline"></ion-icon>
+      Categories </h3>
+  </div>
+  <ion-slides [options]="option">
+    <ion-slide *ngFor="let item of featuredItems">
+      <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+        <ion-card-header>
+          <ion-card-title class="ion-text-left">{{item.name}}</ion-card-title>
+          <ion-card-subtitle class="ion-no-margin ion-text-left ion-text-lowercase ">{{item.description}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-no-padding ">
+          <ion-grid class="ion-no-margin">
+            <ion-row>
+              <ion-col size="8">
+                <img [src]="item?.img" />
+              </ion-col>
+              <ion-col size="4">
+
+                <div class="imgside">
+                  <div class="siderate">
+                    <h3>
+                      {{item.survivalrate}}%
+                    </h3>
+                    <p>
+                      Survival Rate
+                    </p>
+                  </div>
+                  <div class="siderate">
+                    <h3>
+                      {{item.stages}}
+                    </h3>
+                    <p>
+                      Stages
+                    </p>
+                  </div>
+                  <div class="siderate">
+                    <h3>
+                      {{item.types}}
+                    </h3>
+                    <p>
+                      Types
+                    </p>
+                  </div>
+                </div>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+</ion-content>

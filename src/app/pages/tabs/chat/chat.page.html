@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="first">
+      <h1>
+        Donate Us
+      </h1>
+    </ion-row>
+    <ion-row class="ion-text-center" style="color: rgb(239, 239, 239); line-height:15px; font-size:13px">
+      <p>
+        Your donations help fund innovative studies, access to state-of-the-art treatments, and critical support services that make life easier for cancer patients during their journey. By donating, you become a partner in our fight against cancer, and together we can make a real difference in the lives of those affected by this disease.
+      </p>
+    </ion-row>
+    <ion-row >
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/icon/ascategory.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/paytm.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- chat?.sender === current_user_id ? 'end' : 'start'"  -->
+    <!-- <img (click)="onclick()" [src]="custom_img === true ? 'assets/icon/ascategory.png' : 'assets/paytm.jpg'" alt=""> -->
+      <!-- <img  src="assets/paytm.jpg" alt=""> -->
+      
+    </ion-row>
+  </ion-grid>
+  <div class="below">
+
+    <ion-range [value]="500" [pin]="true" [max]="9999" (ionChange)="onIonChange($event)"></ion-range>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <ion-card (click)="presentToast('top')" class="ion-text-center">
+      <i class="fa fa-rupee"></i>
+      <ion-label > {{ lastEmittedValue }}</ion-label>
+    </ion-card>
+  </div>
+</ion-content>

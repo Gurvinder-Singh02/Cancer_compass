@@ -1,0 +1,111 @@
+:host,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  text-decoration: none;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+:host,
+:not(span, a, ul, ol, li, p) {
+  display: flex;
+}
+
+ul,
+ol {
+  text-indent: 0;
+  padding-inline-start: 1.5em;
+}
+
+p:empty::before {
+  content: '';
+  display: inline-block;
+}
+
+img {
+  object-fit: contain;
+}
+
+svg {
+  overflow: visible;
+}
+
+:host {
+  position: relative;
+  width: 813px;
+  height: 99px;
+  align-items: flex-start;
+}
+.rectangle7 {
+  outline: solid 9px rgba(217, 217, 217, 0.251);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 302px;
+  height: 67px;
+  border-radius: 28px;
+  background-color: #ebe8e8;;
+}
+.riskFactors {
+  color: #130f26;
+  font-size: 41.9787px;
+  font-weight: bold;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.02em;
+  position: absolute;
+  left: 25px;
+  top: 18px;
+  width: 292px;
+  height: min-content;
+  flex-direction: column;
+}
+.geneticFactorsLifeStyleAssocia {
+  position: absolute;
+  left: 410px;
+  top: 0;
+  width: 403px;
+  height: min-content;
+  flex-direction: column;
+  &__textBlock {
+    color: #999a99;
+    font-size: 22px;
+    line-height: 150%;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+  }
+  &__textBlock2 {
+    margin-top: 0;
+    color: #999a99;
+    font-size: 22px;
+    line-height: 150%;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+  }
+  &__textBlock3 {
+    margin-top: 0;
+    color: #999a99;
+    font-size: 22px;
+    line-height: 150%;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+  }
+}
+.frame10 {
+  position: absolute;
+  left: 302px;
+  top: 14px;
+  width: 104px;
+  height: 76px;
+  overflow: visible;
+  &__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

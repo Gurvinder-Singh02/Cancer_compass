@@ -1,0 +1,19 @@
+string = "engineers rock"
+pattern = "er"
+
+i = 0           # index for string
+follows_order = True
+
+for p in pattern:
+    found_char = False
+    for s in string:
+        if s == p:
+            print(s)
+            found_char = True
+            break
+        
+    if not found_char:
+        follows_order = False
+        break
+
+print(follows_order)   

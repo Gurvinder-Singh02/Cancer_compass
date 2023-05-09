@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="104" height="76" viewBox="0 0 104 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="37.5" x2="67" y2="37.5" stroke="black"/>
+<line x1="67.5" y1="4" x2="67.5" y2="74" stroke="black"/>
+<line x1="67" y1="3.5" x2="99" y2="3.5" stroke="black"/>
+<line x1="67" y1="37.5" x2="99" y2="37.5" stroke="black"/>
+<line x1="67" y1="73.5" x2="99" y2="73.5" stroke="black"/>
+<circle cx="101" cy="3" r="3" fill="black"/>
+<circle cx="101" cy="38" r="3" fill="black"/>
+<circle cx="101" cy="73" r="3" fill="black"/>
+</svg>

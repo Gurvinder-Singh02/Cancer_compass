@@ -1,0 +1,183 @@
+ion-header {
+
+    .top-section {
+        overflow: hidden;
+        min-height: 80%;
+        background-color: hsl(158, 24%, 91%);
+        border-radius: 25px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        .title {
+            padding: 40px 0 30px 0;
+            font-weight: 700;
+            color: var(--ion-color-dark);
+            text-align: left;
+
+            .Cancer {
+                font-weight: 600px;
+                font-size: 1.7rem;
+                padding: 10px 5px 0 15px;
+            }
+
+            .compass {
+                position: relative;
+                top: 9px;
+                font-size: 1.9rem;
+            }
+
+            img {
+                position: fixed;
+                top: 18px;
+                right: -2px;
+                max-height: 100%;
+            }
+        }
+
+        .types {
+            padding-left: 15px;
+            padding-bottom: 15px;
+
+            .first {
+                color: var(--ion-color-dark);
+                font-size: 1.5rem;
+                font-weight: 650;
+            }
+
+            .second {
+                position: relative;
+                top: -10px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: rgb(161, 161, 161);
+            }
+        }
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,800');
+
+ion-content {
+    --background: var(--ion-color-light);
+
+    .title {
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--ion-color-dark);
+    }
+
+    ion-button {
+        --background: var(--ion-color-secondary);
+        --color: var(--ion-color-light);
+        --border-radius: 10px;
+        // --box-shadow: 0px 0 6px #57bf9c;
+
+    }
+
+    ion-slides {
+        margin: -13px 0 0 0;
+
+        ion-slide {
+            margin-right: 13vh;
+            margin-left: 0vh;
+
+            ion-card {
+                height: 33.5vh;
+                min-width: 33.5vh;
+                border-radius: 26px;
+                box-shadow: 0;
+
+                ion-card-header {
+                    margin: 1px 0 0 10px;
+
+                    ion-label {
+                        margin: 0;
+                        padding: 0;
+
+                        h3 {
+                            font-weight: bold;
+                            font-size: 1rem;
+                            color: var(--ion-color-dark);
+                            position: relative;
+                            right: 30px;
+                            bottom: 10px;
+                        }
+
+                        p {
+                            box-sizing: border-box;
+                            height: 37px;
+                            font-size: 0.5rem;
+                            color: var(--ion-color-dark);
+                            position: relative;
+                            width: 110%;
+                            right: 8px;
+                            bottom: 18.5px;
+                            padding-top: 5px;
+                            margin: 0;
+                            text-align: start;
+                            line-height: 8px;
+                        }
+                    }
+                }
+
+                ion-card-content {
+
+                    img {
+                        position: relative;
+                        bottom: 40px;
+                        right: 20px;
+                        border-radius: 21px;
+                    }
+
+                    .imgside {
+                        position: relative;
+                        width: 56px;
+                        height: 124px;
+                        bottom: 42px;
+                        right: 20px;
+                        border-radius: 22px;
+
+                        .siderate {
+                            h3 {
+                                color: black;
+                                font-size: 1.3rem;
+                                font-weight: 800;
+                            }
+
+                            p {
+                                color: black;
+                                font-size: 0.5rem;
+                                position: relative;
+                                bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bgCard {
+                background-color: #fff;
+
+            }
+
+            .featured {
+                height: 40vh;
+
+                ion-card-header {
+                    padding: 0;
+                    background: var(--ion-color-tertiary);
+
+                    img {
+                        height: 30vh;
+                    }
+                }
+            }
+
+            .price {
+                align-self: end;
+                margin-top: 11px;
+            }
+        }
+    }
+}

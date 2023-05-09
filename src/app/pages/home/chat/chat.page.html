@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-no-padding" color="light">{{name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p style="font-size: 10.5px; color:#57bf9c"  class="ion-text-center ion-margin-top  ">{{des}} </p>
+  <app-empty-screen *ngIf="(chats | async)?.length === 0" [model]="model">
+  </app-empty-screen>
+  <ng-container *ngIf="(chats | async) as chat$">
+    <ion-list  lines="none" *ngIf="chat$?.length > 0">
+      <ion-item-group class="chats-group" *ngFor="let chat of chat$">
+        <app-chat-box  [chat]="chat" [current_user_id]="chatService.currentUserId"></app-chat-box>
+      </ion-item-group>
+    </ion-list>
+  </ng-container>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-textarea autoGrow rows="1" placeholder="Send message" class="ion-text-center" [(ngModel)]="message">
+    </ion-textarea>
+    <ion-buttons slot="end">
+      <ion-fab-button *ngIf="!isLoading" size="small" color="primary" (click)="sendMessage()">
+        <ion-icon name="send"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button *ngIf="isLoading" size="small" color="primary">
+        <ion-spinner name="crescent" color="white"></ion-spinner>
+      </ion-fab-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,28 @@
+ion-header {
+
+    ion-toolbar {
+        --background: var(--ion-color-secondary);
+        --color: var(--ion-color-primary-contrast);
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            ion-icon {
+                padding-right : 10px;
+            }
+        }
+    }
+}
+
+.cont{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+ion-content{
+    ion-label{
+        font-family: poppins;
+    }
+}
