@@ -1,76 +1,82 @@
 ion-header {
-    .des {
+  // background-image: url('assets/person half.png');
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
+  .des {
+    position: relative;
+    margin-left: 7px;
+    text-align: center;
+    top: -10px;
+    width: 56%;
+    line-height: 12px;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(161, 161, 161);
+  }
+
+  .top-section {
+
+    overflow: hidden;
+    height: 100%;
+    background-color: hsl(158, 24%, 91%);
+    border-radius: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .title {
+      padding: 40px 0 30px 0;
+      font-weight: 600;
+      color: var(--ion-color-dark);
+      text-align: left;
+
+      .Cancer {
+        color: black;
+        font-weight: 600px;
+        font-size: 2.7rem;
+        padding: 10px 5px 0 15px;
+      }
+
+      .compass {
+        color: black;
         position: relative;
-        margin-left: 7px;
-        text-align: center;
+        top: 9px;
+        font-size: 2.6rem;
+      }
+
+      // img {
+      //   display: inline;
+      //   z-index: 0;
+      //   height: 300px;
+      //   top: 18px;
+      //   right: -2px;
+      // }
+    }
+
+    .typesmain {
+      margin-top: 4%;
+    }
+
+    .types {
+      color: black;
+      padding-left: 15px;
+      padding-bottom: 15px;
+
+      .first {
+
+        font-size: 1.8rem;
+        font-weight: 650;
+      }
+
+      .second {
+        position: relative;
         top: -10px;
-        width: 56%;
-        line-height: 12px;
-        display: block;
         font-size: 0.8rem;
         font-weight: 500;
         color: rgb(161, 161, 161);
+      }
     }
-    .top-section {
-
-        overflow: hidden;
-        height: 100%;
-        background-color: hsl(158, 24%, 91%);
-        border-radius: 25px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-        .title {
-          padding: 40px 0 30px 0;
-          font-weight: 600;
-          color: var(--ion-color-dark);
-          text-align: left;
-
-            .Cancer {
-              color: black;
-              font-weight: 600px;
-              font-size: 2.7rem;
-              padding: 10px 5px 0 15px;
-            }
-
-            .compass {
-              color: black;
-              position: relative;
-              top: 9px;
-              font-size: 2.6rem;
-            }
-
-            img {
-                position: fixed;
-                top: 18px;
-                right: -2px;
-                max-height: 100%;
-            }
-        }
-
-        .typesmain {
-          margin-top: 4%;
-        }
-
-        .types {
-          color: black;
-            padding-left: 15px;
-            padding-bottom: 15px;
-
-            .first {
-                
-                font-size: 1.8rem;
-                font-weight: 650;
-            }
-
-            .second {
-                position: relative;
-                top: -10px;
-                font-size: 0.8rem;
-                font-weight: 500;
-                color: rgb(161, 161, 161);
-            }
-        }
-    }
+  }
 
 }
 
@@ -83,108 +89,109 @@ ion-header {
 
 
 ion-content {
-    --background: var(--ion-color-light);
+  --background: var(--ion-color-light);
 
-    .common {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding: 0;
+  .common {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
 
-        h3 {
-            border: 1px solid #57bf9c;
-            background-color: #57bf9c;
-            border-radius: 20px;
-            margin: 12px 0 0 12px;
-            padding: 5px 20px;
-            font-size: 1rem;
-            // font-weight: 700;
-            // letter-spacing: 10px;
-            color: white;
-        }
-
-        ion-button {
-            --background: var(--ion-color-secondary);
-            --color: var(--ion-color-light);
-            --border-radius: 10px;
-            --box-shadow: 0px 0 6px #57bf9c;
-        }
-
+    h3 {
+      border: 1px solid #57bf9c;
+      background-color: #57bf9c;
+      border-radius: 20px;
+      margin: 12px 0 0 12px;
+      padding: 5px 20px;
+      font-size: 1rem;
+      // font-weight: 700;
+      // letter-spacing: 10px;
+      color: white;
     }
+
+    ion-button {
+      --background: var(--ion-color-secondary);
+      --color: var(--ion-color-light);
+      --border-radius: 10px;
+      --box-shadow: 0px 0 6px #57bf9c;
+    }
+
+  }
 }
 
 ion-card {
-    width: 100%;
-    // background-color: aqua;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 26px;
+  width: 100%;
+  // background-color: aqua;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 26px;
 
-    ion-card-header {
-        padding: 2vh 0 0 2vh;
-        margin-bottom: 1vh;
+  ion-card-header {
+    padding: 2vh 0 0 2vh;
+    margin-bottom: 1vh;
 
-        ion-card-title {
-            font-weight: 600;
-            font-size: 1.8rem;
-            color: var(--ion-color-dark);
+    ion-card-title {
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--ion-color-dark);
 
-        }
-
-        ion-card-subtitle {
-            font-weight: 500;
-            font-size: 0.6rem;
-            line-height: 9px;
-            color: var(--ion-color-dark);
-
-        }
     }
 
-    ion-card-content {
-      .imgside{
-        margin-top: -15px;
+    ion-card-subtitle {
+      font-weight: 500;
+      font-size: 0.6rem;
+      line-height: 9px;
+      color: var(--ion-color-dark);
+
+    }
+  }
+
+  ion-card-content {
+    .imgside {
+      margin-top: -15px;
+    }
+
+    .siderate {
+      margin-top: 14px;
+
+      h3 {
+
+        // color: black;
+        font-size: 1.5rem;
+        font-weight: 600;
       }
-        .siderate {
-            margin-top: 14px;
 
-            h3 {
-
-                // color: black;
-                font-size: 1.5rem;
-                font-weight: 600;
-            }
-
-            p {
-                // color: black;
-                font-size: 0.7rem;
-                position: relative;
-                bottom: 5px;
-            }
-        }
+      p {
+        // color: black;
+        font-size: 0.7rem;
+        position: relative;
+        bottom: 5px;
+      }
     }
+  }
 
-    img {
-        border-radius: 22px;
-        width: 100%;
-        transform: scale(1.1, 1.1);
-        transition: 600ms all ease-in-out;
-    }
+  img {
+    border-radius: 22px;
+    width: 100%;
+    transform: scale(1.1, 1.1);
+    transition: 600ms all ease-in-out;
+  }
 
 }
 
 ion-slide {
-    position: relative;
-    right: 35px;
-    bottom: 3px;
+  position: relative;
+  right: 35px;
+  bottom: 3px;
 }
 
 .swiper-slide-active {
 
-    ion-card {
+  ion-card {
 
-        img {
-            transform: scale(1, 1);
-        }
+    img {
+      transform: scale(1, 1);
     }
+  }
 }
 
 // .swiper-slide {
