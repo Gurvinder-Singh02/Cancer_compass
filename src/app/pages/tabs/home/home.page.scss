@@ -1,8 +1,5 @@
 ion-header {
-  // background-image: url('assets/person half.png');
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-size: cover;
+
   .des {
     position: relative;
     margin-left: 7px;
@@ -17,6 +14,11 @@ ion-header {
   }
 
   .top-section {
+    background-image: url('./../../../../assets/person\ half.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 256px;
+    background-position-x: right;
 
     overflow: hidden;
     height: 100%;
