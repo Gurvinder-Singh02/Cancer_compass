@@ -1,3 +1,4 @@
+<ion-content [fullscreen]="true">
 <ion-header class="ion-no-border">
   <div class="top-section">
     <div class="top-menu">
@@ -25,12 +26,11 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true">
   <div class="lowsection">
 
 
   <div class="common">
-    <h3 routerLink="../../home" class="ion-text-uppercase"> <ion-icon name="chatbubbles-outline"></ion-icon>
+    <h3  class="ion-text-uppercase"> <ion-icon name="git-network-outline"></ion-icon>
       Categories </h3>
   </div>
   <ion-slides [options]="option">
@@ -48,8 +48,8 @@
               </ion-col>
               <ion-col size="4">
 
-                <div class="imgside">
-                  <div class="siderate">
+                <div class="imgside" >
+                  <div class="siderate" >
                     <h3>
                       {{item.survivalrate}}%
                     </h3>
@@ -82,6 +82,6 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
-  <br><br><br><br><br><br>
+  <br>
 </div>
 </ion-content>

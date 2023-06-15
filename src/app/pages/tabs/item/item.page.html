@@ -125,7 +125,16 @@
         </li>
       </ol>
     </ion-card>
-<!-- 
+    <ion-card>
+      <ol style="list-style-type: none; padding:0 5px ; text-align:justify">
+        <li *ngFor="let x of item.factors_details1">
+          {{x}}
+          <br>
+          <br>
+        </li>
+      </ol>
+    </ion-card>
+<!--
     <ion-slides [options]="option1">
       <ion-slide>
         <ion-card class="card1" [style.background-image]="item.bgimg">
@@ -225,12 +234,24 @@
         </li>
       </ol>
     </ion-card>
+    <ion-button fill="clear" style="width: 100px;">
+      <ion-icon name="medkit-outline"></ion-icon>
+      note
+    </ion-button>
+    <ion-card>
+      <ol>
+        <li >
+          {{item?.treatments.note}}
+        </li>
+      </ol>
+    </ion-card>
   </div>
 
 
   <div class="card5">
     <img [src]="item?.treatments_img" alt="" srcset="">
   </div>
+
 
 
 </ion-content>

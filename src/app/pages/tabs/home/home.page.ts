@@ -15,10 +15,10 @@ export class HomePage implements OnInit {
     spaceBetween: 10,
     centeredSlides: true,
     autoplay: {
-      delay: 4000,
+      delay: 6000,
     },
   }
- 
+
   popularItems: any[] = [];
   featuredItems: any[] = [];
 
