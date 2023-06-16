@@ -2,7 +2,7 @@
 
 Cancer Info App is a mobile application built with Ionic Angular and Capacitor that provides information about various types of cancer. The app includes a full interactive UI design with four main tabs: Home, Search, Donate, and Settings. It is designed to educate people about different types of cancer, their symptoms, and causes, and also allows users to donate to cancer charities.
 
-![Home Page](cancer compas.png)
+![Home Page](ScreenShots/mockup.png)
 
 
 ## Features
@@ -20,49 +20,44 @@ Here are some screenshots of the Cancer Info App:
 ### Home Page
 
 The Home page displays the main categories of different types of cancer.
+![Home Page](ScreenShots/home.jpg)![Home Page](ScreenShots/home1.jpg)
 
-![Home Page](ScreenShots/mockup.png)
 
 ### Category Page
 
 The Category page displays the different types of cancer that are available in the app.
 
-![Category Page](screenshots/category.png)
+![Home Page](ScreenShots/category.jpg)![Home Page](ScreenShots/category1.jpg)
 
-### Details Page
-
-The Details page shows comprehensive information about the selected cancer type.
-
-![Details Page](screenshots/details.png)
 
 ### Search Page
 
 The Search page allows users to search for specific types of cancer.
 
-![Search Page](screenshots/search.png)
+![Home Page](ScreenShots/search.jpg)
 
 ### Donate Page
 
 The Donate page allows users to donate to cancer charities.
 
-![Donate Page](screenshots/donate.png)
+![Home Page](ScreenShots/donate.jpg)![Home Page](ScreenShots/donate1.jpg)
 
 ### Settings Page
 
 The Settings page provides a link to the chat app where users can chat with available doctors.
 
-![Settings Page](screenshots/settings.png)
+![Home Page](ScreenShots/settings.jpg)
 
 ## Installation
 
 To install and run the app locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your_username/cancer-info-app.git`
+1. Clone the repository: `git clone https://github.com/Gurvinder-Singh02/Cancer_compass.git`
 2. Install the dependencies using: `npm install`
 3. Start the app using: `ionic serve`
 
 ## Usage
-
+Download the app by clicking on Releases and Assests then download make sure to give access to 3rd party downloads
 To use the app, follow these steps:
 
 1. Launch the app
@@ -84,5 +79,3 @@ The following technologies were used to build the Cancer Info App:
 ## Contributors
 
 - [Gurvinder Singh](https://github.com/Gurvinder-Singh02/)
-
-!['sample text'](https://github.com/gbhulalr6791/Health_Cohart_app/blob/0b1ea6984326e6bd606040bc386299699b4f5841/cancer%20compas.png)
