@@ -2,7 +2,7 @@
 
 Cancer Info App is a mobile application built with Ionic Angular and Capacitor that provides information about various types of cancer. The app includes a full interactive UI design with four main tabs: Home, Search, Donate, and Settings. It is designed to educate people about different types of cancer, their symptoms, and causes, and also allows users to donate to cancer charities.
 
-![Home Page](mockup.png)
+![Home Page](cancer compas.png)
 
 
 ## Features
