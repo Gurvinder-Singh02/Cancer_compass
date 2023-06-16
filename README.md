@@ -83,6 +83,6 @@ The following technologies were used to build the Cancer Info App:
 
 ## Contributors
 
-- [Gurvinder Singh](https://github.com/gbhullar6791)
+- [Gurvinder Singh](https://github.com/Gurvinder-Singh02/)
 
 !['sample text'](https://github.com/gbhulalr6791/Health_Cohart_app/blob/0b1ea6984326e6bd606040bc386299699b4f5841/cancer%20compas.png)
