@@ -20,7 +20,7 @@ Here are some screenshots of the Cancer Info App:
 ### Home Page
 
 The Home page displays the main categories of different types of cancer.
-![Home Page](ScreenShots/home.jpg)![Home Page](ScreenShots/home1.jpg)
+![Home Page](ScreenShots/home.jpg)
 
 
 ### Category Page
@@ -47,6 +47,12 @@ The Donate page allows users to donate to cancer charities.
 The Settings page provides a link to the chat app where users can chat with available doctors.
 
 ![Home Page](ScreenShots/settings.jpg)
+
+### login Page
+![Home Page](ScreenShots/login.jpg)![Home Page](ScreenShots/login1.jpg) 
+
+### Chat Page
+![Home Page](ScreenShots/chat.jpg)![Home Page](ScreenShots/chat1.jpg)
 
 ## Installation
 
