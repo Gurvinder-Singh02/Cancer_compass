@@ -21,7 +21,7 @@ Here are some screenshots of the Cancer Info App:
 
 The Home page displays the main categories of different types of cancer.
 
-![Home Page](screenshots/home.png)
+![Home Page](ScreenShots/mockup.png)
 
 ### Category Page
 
